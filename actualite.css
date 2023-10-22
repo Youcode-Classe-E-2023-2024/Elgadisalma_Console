@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+/*start Actualite */
+
+/* ph-actualite */
+.ph-actualite-background {
+    background-image: url("picture/zzz.png");
+    
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    /* padding: 370px;  */
+    border-top: 10px solid  #FF5C00; 
+    border-bottom: 10px solid #FF5C00; 
+    border-left: 10px solid #FF5C00; 
+    box-shadow: inset 3px 10px 5px #FF5C00, inset 3px -5px 20px 1px #FF5C00, inset 0 1px 20px #FF5C00;
+}
+/* end ph-actualite*/
+
+.actualite-container{
+    background-color: #000;
+    color: #fff;
+    box-shadow: inset 3px 10px 5px #FF5C00, inset 3px -5px 20px 1px #FF5C00, inset 0 1px 20px #FF5C00;
+    border-right: 10px solid #FF5C00; /* Border only on the right side */
+    border-bottom: 10px solid #FF5C00; /* Border only on the bottom */
+}
+.actualite-container h1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    
+    margin: 20px auto;
+    justify-content: center;
+    gap: 40px;
+}
+.new{
+    background-color: #171616;
+    height: 400px;
+    width: 35%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.new-thumb{
+
+    width:80%;
+    
+}
+.new-thumb img{
+    width: 100%;
+    height: 100%;
+    
+}
+.new h5{
+    font-family:Inter ;
+}
+.new-descirption{
+    
+    width:80%;
+}
+.pagination{
+    
+
+}
+/*end Actualite */
+
+
+
+
+
+@media  (max-width: 800px) {
+   .new{
+    width: 95%;
+    background-color: #000;
+   }
+   .ph-actualite-background{
+    background-image: url("picture/creative-cartoon-gamer-room_23-2148936605\ 1.png");
+    
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+   }
+  }

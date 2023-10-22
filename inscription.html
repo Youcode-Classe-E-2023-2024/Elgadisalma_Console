@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console+</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="inscription.css">
+         <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div id="logo">
+                <img src="picture/Logo.png" alt="Console+">
+            </div>
+            <div id="menu-toggle" onclick="toggleSideBar()">&#9776;</div>
+            <div class="sidebar" id="sidebar">
+                <ul class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                    <li><a href="jeux.html">Jeux Populaires</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+    
+          
+        <!-- end navbar -->
+
+        <!-- inscription -->
+
+        <div class="ph-inscription-background">
+        </div>
+        <div class="inscription-container">
+            <div class="inscription-txt">
+                <h1>S’inscrire à Console+</h1>
+                <p>Profitez d’offres exclusives, de mises à jour automatiques et bien plus encore parmi un choix de plus de 30 000 jeux, AAA ou indépendants.</p>
+            </div>
+            <div class="inscription-input">
+                <input type="text"  name="subject" placeholder="Name">
+                <input type="text"  name="subject" placeholder="Email">
+                <input type="text"  name="subject" placeholder="Phone Number">
+                <input type="number"  name="subject" placeholder="Age">
+                <button>S'inscrire</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- end inscription -->
+
+        <!-- footer -->
+        <!-- end footer -->
+        <script>
+            function toggleSideBar()
+            {
+                console.log('clicked');
+                var sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else
+                {
+                    sidebar.style.width = "250px";
+                }
+            }
+        </script>
+    </body>
+</html>

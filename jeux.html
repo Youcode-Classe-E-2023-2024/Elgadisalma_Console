@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console+</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="jeux.css">
+         <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div id="logo">
+                <img src="picture/Logo.png" alt="Console+">
+            </div>
+            <div id="menu-toggle" onclick="toggleSideBar()">&#9776;</div>
+            <div class="sidebar" id="sidebar">
+                <ul class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                    <li><a href="jeux.html">Jeux Populaires</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+    
+          
+        <!-- end navbar -->
+
+        <!-- jeux -->
+
+        <div class="ph-jeux-background">  
+        </div>
+        <div class="jeux-container">
+            <h1><ins>Les 24 jeux les plus joués en ce mois</ins></h1>
+            <div class="jeux">
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu1.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>1-Minecraft</h4>
+                        <p>Le jeu le plus connu au monde est sorti en 2011 et, comme il s'agit d'un jeu en constante évolution, il reste populaire aujourd'hui.</p>
+                        <a href="#">Télécharger</a>
+                    </div>
+                </div>
+
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu2.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>2-Fortnite</h4>
+                        <p>Fortnite est l'un des jeux les plus populaires en ligne depuis sa sortie en 2017.
+                            Peu importe que les joueurs soient plongés dans la logique des jeux Battle Royale</p>
+                        <a href="#">Télécharger</a>
+                    </div>
+                </div>
+
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu3.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>3-Fall Guys</h4>
+                        <p>Ce jeu Battle Royale de Mediatonic et Epic Games continue d'impressionner.
+                            L'une des principales raisons pour lesquelles Fall Guys reste au palmarès est que c’est un des jeux free-to-play les plus réussis.</p>
+                        <a href="#">Télécharger</a>
+                    </div>
+                </div>
+
+                
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu4.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>4-League of Legends</h4>
+                        <p>Ce jeu Battle Royale de Mediatonic et Epic Games continue d'impressionner.
+                            L'une des principales raisons pour lesquelles Fall Guys reste au palmarès est que c’est un des jeux free-to-play les plus réussis.</p>
+                        <a href="#">Télécharger</a>
+                    </div>
+                </div>
+
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu5.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>5-CrossFire</h4>
+                        <p>Avec 8 millions de joueurs simultanés aux heures de pointe, c'est déjà l'un des jeux vidéo les plus joués du moment.CrossFire n'est peut-être pas aussi connu en Occident, mais il est très populaire en Orient.</p>
+                    <a href="#">Télécharger</a>
+                    </div>
+                </div>
+
+                <div class="jeu">
+                    <div class="jeu-thumb">
+                        <img src="picture/jeu6.png" alt="">
+                    </div>
+                    <div class="jeu-description">
+                        <h4>6-Valorant</h4>
+                        <p>C’est une demande évidente. Le jeu compte actuellement plus de 14 millions d'utilisateurs mensuels actifs et tout ce qui concerne Valorant attire un public croissant sur Twitch.</p>
+                    <a href="#">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- end jeux -->
+
+        <!-- footer -->
+        <!-- end footer -->
+        <script>
+            function toggleSideBar()
+            {
+                console.log('clicked');
+                var sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else
+                {
+                    sidebar.style.width = "250px";
+                }
+            }
+        </script>
+    </body>
+</html>

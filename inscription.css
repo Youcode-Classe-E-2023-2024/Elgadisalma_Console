@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+/* start inscription */
+.ph-inscription-background{
+    background-image: url("picture/back\ inscription.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 375px; /* Ajoute de la marge interne pour afficher le contenu correctement */
+    text-align: center; 
+    color: #fff; 
+    border-top: 10px solid  #BE04FF; 
+    border-bottom: 10px solid #BE04FF;
+    border-left: 10px solid #BE04FF;
+    
+    /* Effet néon sur la bordure */
+    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
+
+}
+.inscription-container{
+    background-color: #000;
+    color: #fff;
+    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
+    border-right: 10px solid #BE04FF; /* Border only on the right side */
+    border-bottom: 10px solid #BE04FF; /* Border only on the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inscription-txt{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+
+}
+.inscription-txt p{
+    font-size: 18px;
+    font-family: Inter;
+
+}
+.inscription-input input{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+      height: 5vh;
+      padding: 5px 20px;
+      background-color: #202020;
+}
+.inscription-input button{
+    width: 25%;
+    /* gap: 20px; */
+      height: 5vh;
+      padding: 5px 20px;
+      background-color: #BE04FF;
+}
+
+
+/* end inscription */
+
+
+@media  (max-width: 800px) {
+    
+    .ph-inscription-background{
+     background-image: url("picture/back\ inscription\ 2.webp");
+     
+     /* background-size: cover;
+     background-repeat: no-repeat; */
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* background-attachment: fixed; */
+     width: 100%;
+     height: 100vh;
+     background-position: center;
+    }
+   }

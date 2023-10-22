@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console+</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="home.css">
+         <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div id="logo">
+                <img src="picture/Logo.png" alt="Console+">
+            </div>
+            <div id="menu-toggle" onclick="toggleSideBar()">&#9776;</div>
+            <div class="sidebar" id="sidebar">
+                <ul class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                    <li><a href="jeux.html">Jeux Populaires</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+    
+          
+        <!-- end navbar -->
+
+        <!-- home -->
+
+        <div class="ph-home-background">
+
+            <h1>GAMING</h1>
+            <h2>TIME</h2>
+        </div>
+        <div class="login-container">
+            <h1>Accès aux jeux</h1>
+            <div class="login">
+            <div class="txt-login">
+                <h4>Bienvenue</h4>
+                <input type="text"  name="subject" placeholder="Email">
+                <input type="text"  name="subject" placeholder="Password">
+                <div class="btn-login">
+                    <a href="#"><button>Login</button></a>
+                    <a href="inscription.html"><button>Sign up</button></a>
+                </div>  
+            </div>
+            <div class="img-thumb">
+                 <img src="picture/login-ph.png" alt="">
+            </div>
+        </div>
+        </div>
+        
+
+
+
+        <!-- end home -->
+
+        <!-- footer -->
+        <div class="footer-container">
+        
+            <img src="picture/Logo.png" alt="">
+        
+        <div class="suivie">
+            <h4>Suivez-nous</h4>
+            <div class="icons-suivie">
+                <a href="#"><img src="picture/facebook.png" alt=""></a>
+                <a href="#"><img src="picture/instagram.png" alt=""></a>
+                <a href="#"><img src="picture/twitter.png" alt=""></a>
+                <a href="#"><img src="picture/youtube.png" alt=""></a>
+            
+            </div>
+        </div>
+    </div>
+        <!-- end footer -->
+        <script>
+            function toggleSideBar()
+            {
+                console.log('clicked');
+                var sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else
+                {
+                    sidebar.style.width = "250px";
+                }
+            }
+        </script>
+    </body>
+</html>

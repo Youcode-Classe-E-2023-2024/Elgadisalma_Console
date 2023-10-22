@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Console+</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="actualite.css">
+         <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div id="logo">
+                <img src="picture/Logo.png" alt="Console+">
+            </div>
+            <div id="menu-toggle" onclick="toggleSideBar()">&#9776;</div>
+            <div class="sidebar" id="sidebar">
+                <ul class="menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="actualite.html">Actualités</a></li>
+                    <li><a href="jeux.html">Jeux Populaires</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+        
+          
+        <!-- end navbar -->
+
+        <!-- actualite -->
+
+        <div class="ph-actualite-background">
+            
+        </div>
+        <div class="actualite-container">
+            <h1>Toutes les news</h1>
+            <div class="news">
+                <div class="new">
+                    <div class="new-thumb">
+                        <img src="picture/new1.png" alt="">
+                    </div>
+                    <div class="new-descirption">
+                        <h5>News jeux</h5>
+                        <p>1,2 millions d'euros pour un skin de couteau, et il a refusé l'offre ? Les prix dans Counter-Strike sont complètement absurdes</p>
+                        <h5>Publié le 18/10/2023 à 07:02</h5>
+                    </div>
+                
+                </div>
+                <div class="new">
+                    <div class="new-thumb">
+                        <img src="picture/new2.png" alt="">
+                    </div>
+                
+                    <div class="new-descirption">
+                        <h5>News jeux</h5>
+                        <p>25 ans après, cette manette Nintendo 64 très spéciale vaut plus de 10.. !</p>
+                        <h5>Publié le 17/10/2023 à 19:00</h5>
+                    </div>
+
+                </div>
+                <div class="new">
+                    <div class="new-thumb">
+                        <img src="picture/new3.png" alt="">
+                    </div>
+                    <div class="new-descirption">
+                        <h5>News jeux</h5>
+                        <p>Avec un compte à 250 000 dollars, le joueur le plus riche de ce MMORPG a été banni à vie, mais il conteste ...</p>
+                        <h5>Publié le 17/10/2023 à 19:45</h5>
+                    </div>
+                    
+                </div>
+                <div class="new">
+                    <div class="new-thumb">
+                        <img src="picture/new4.png" alt="">
+                    </div>
+                
+                    <div class="new-descirption">
+                        <h5>News jeux</h5>
+                        <p>Après Arcane et Cyberpunk Edgerunners, Netflix continue de draguer les fans de jeux vidéo avec une autre..</p>
+                        <h5>Publié le 17/10/2023 à 21:37</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#"><button>1</button></a>
+                <a href="#"><button>2</button></a>
+                <a href="#"><button>3</button></a>
+                <a href="#"><button>4</button></a>
+            </div>
+        </div>
+
+
+
+        <!-- end actualite -->
+
+        <!-- footer -->
+        <!-- end footer -->
+        <script>
+            function toggleSideBar()
+            {
+                console.log('clicked');
+                var sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else
+                {
+                    sidebar.style.width = "250px";
+                }
+            }
+        </script>
+    </body>
+</html>
