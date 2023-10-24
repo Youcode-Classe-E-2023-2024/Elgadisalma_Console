@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -7,32 +8,31 @@
 /* ph-home */
 
 .ph-home-background {
-    background-image: url("picture/2150706403.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 320px; /* Ajoute de la marge interne pour afficher le contenu correctement */
-    text-align: center; 
-    color: #fff; 
-    border-top: 10px solid  #630A0A; 
-    border-bottom: 10px solid #630A0A;
-    border-left: 10px solid #630A0A;
-    
-    /* Effet néon sur la bordure */
-    box-shadow: inset 3px 10px 5px #630A0A, inset 3px -5px 20px 1px #630A0A, inset 0 1px 20px #630A0A;
-
+  background-image: url("picture/2150706403.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20%; /* ajoute la marge */
+  text-align: center;
+  color: #fff;
+  box-shadow:
+    inset 0 10px 10px #630A0A, 
+    inset 10px 0 10px #630A0A ,
+    inset 0 -10px 10px #630A0A;
 }
+
 
 .ph-home-background h1{
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     color: #E56272;
     font-size: 40px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 .ph-home-background h2{
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
-
+    text-shadow: -1px -1px 0 #E56272, 1px -1px 0 #E56272, -1px 1px 0 #E56272, 1px 1px 0 #E56272;
 }
 
 
@@ -51,15 +51,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: inset 3px 10px 5px #630A0A, inset 3px -5px 20px 1px #630A0A, inset 0 1px 20px #630A0A;
-    border-right: 10px solid #630A0A; /* Border only on the right side */
-    border-bottom: 10px solid #630A0A; /* Border only on the bottom */
+    box-shadow:   inset 0 10px 10px #630A0A, 
+    inset -10px 0 10px #630A0A ,
+    inset 10px 0 0px transparent ,
+    inset 0 -10px 10px #630A0A;
+   
+    
 }
 .login-container h1{
   color: #fff;
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  text-shadow: -1px -1px 0 #630A0A, 1px -1px 0 #630A0A, -1px 1px 0 #630A0A, 1px 1px 0 #630A0A;
 }
 .img-thumb{
   display: flex;
@@ -74,30 +78,33 @@
     width: 30rem;
 }
 .txt-login{
-  color: white;
-    font-size: 34px;
-    font-family: Inter;
-    font-style: italic;
+    color: white;
     font-weight: 90;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    padding-top: 50px;
-    gap: 30px;
-  
+    padding: 80px;
+    gap: 25px;
+    border: 1px solid #3f3f3f;
+    border-radius: 20px;
+  box-shadow: inset 3px 10px 5px #3f3f3f, inset 3px -5px 20px 1px #3f3f3f, inset 0 1px 20px #3f3f3f;
+    border-right: 10px solid #3f3f3f; /* Border only on the right side */
+    border-bottom: 10px solid #3f3f3f; /* Border only on the bottom */
+}
+.txt-login h4{
+  font-size: 20px;
+  font-family: Inter;
+  font-style: italic;
 }
 .txt-login input{
-  display: flex;
-  flex-direction: column;
-  /* width: 25%; */
-    height: 5vh;
-    padding: 5px 20px;
+    /* width: 70%;  */
+    height: 4vh;
+    padding: 5px 15px;
+    border-radius: 10px;
     background-color: #202020;
     
 }
 .login{
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   /* border: 1px solid red; */
   justify-content: space-around;
@@ -107,10 +114,64 @@
   
   
 }
+.btn-login{
+  display: flex;
+  justify-content: space-around;
+}
 .btn-login a{
-    /* background-color: #630A0A; */
     
+  width: 30%;
+  /* height: vh; */
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #630A0A;
+  text-decoration: none;
+    color: #000;
 }
 
 /* end login */
 /* end home */
+
+@media  (max-width: 1100px) {
+  .login{
+    width: 95%;
+  }
+  .txt-login{
+    color: white;
+    font-weight: 90;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 25px;
+    border: 1px solid #3f3f3f;
+    border-radius: 20px;
+    box-shadow: inset 3px 10px 5px #3f3f3f, inset 3px -5px 20px 1px #3f3f3f, inset 0 1px 20px #3f3f3f;
+    border-right: 10px solid #3f3f3f;
+     border-bottom: 10px solid #3f3f3f;
+  }
+  
+  .img-thumb img{
+  
+    width: 16rem;
+    height: 16rem;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+.ph-home-background h1{
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: #E56272;
+  font-size: 12px;
+}
+.ph-home-background h2{
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+
+}
+
+}
