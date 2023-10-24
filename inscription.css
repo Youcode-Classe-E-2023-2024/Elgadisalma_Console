@@ -8,54 +8,88 @@
     background-image: url("picture/back\ inscription.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 375px; /* Ajoute de la marge interne pour afficher le contenu correctement */
-    text-align: center; 
-    color: #fff; 
-    border-top: 10px solid  #BE04FF; 
-    border-bottom: 10px solid #BE04FF;
-    border-left: 10px solid #BE04FF;
     
-    /* Effet néon sur la bordure */
-    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
+    padding: 25%;/* ajoute la marge */
+    /* text-align: center;  */
+    color: #fff; 
+    box-shadow:
+    inset 0 10px 10px #BE04FF, 
+    inset 10px 0 10px #BE04FF ,
+    inset 0 -10px 10px #BE04FF;
 
 }
 .inscription-container{
-    background-color: #000;
+    background-image: url("picture/abstract-geometric-background-shapes-texture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 290px;
     color: #fff;
-    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
-    border-right: 10px solid #BE04FF; /* Border only on the right side */
-    border-bottom: 10px solid #BE04FF; /* Border only on the bottom */
+    box-shadow:   inset 0 10px 10px #BE04FF, 
+    inset -10px 0 10px #BE04FF ,
+    inset 10px 0 0px transparent ,
+    inset 0 -10px 10px #BE04FF;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 }
-.inscription-txt{
+.inscription-container h1{
+    color: #fff;
+    font-size: 35px;
+    /* padding-top: 20px; */
+    width: 90%;
+    /* border: 1px solid red; */
+    text-align: center;
+    text-shadow: -1px -1px 0 #BE04FF, 1px 0px 0 #BE04FF, 1px 1px 0 #BE04FF, 1px 2px 0 #BE04FF;
+    
+}
+.inscription-container p{
+    font-size: 23px;
+    font-family: Inter;
+    color: #fff;
+    padding-top: 40px;
+    width: 90%;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: bolder;
+}
+.inscription{
     display: flex;
-    justify-content: center;
-    padding-top: 30px;
     flex-direction: column;
+    padding-bottom: 30px;
 
 }
-.inscription-txt p{
-    font-size: 18px;
-    font-family: Inter;
+
+.inscription-input{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    padding-top: 9rem;
 
 }
 .inscription-input input{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    gap: 20px;
-      height: 5vh;
-      padding: 5px 20px;
-      background-color: #202020;
+    width: 70%;
+    height: 5vh;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 15px;
 }
+.inscription-input input::placeholder{
+    color: #202020;
+    font-weight: bold;
+
+}
+
 .inscription-input button{
-    width: 25%;
-    /* gap: 20px; */
-      height: 5vh;
-      padding: 5px 20px;
-      background-color: #BE04FF;
+    width: 75%;
+    height: 6vh;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #BE04FF;
+
+    color: #202020;
+    font-weight: bold;
 }
 
 
@@ -65,15 +99,76 @@
 @media  (max-width: 800px) {
     
     .ph-inscription-background{
-     background-image: url("picture/back\ inscription\ 2.webp");
-     
-     /* background-size: cover;
-     background-repeat: no-repeat; */
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* background-attachment: fixed; */
-     width: 100%;
-     height: 100vh;
-     background-position: center;
+        background-image: url("picture/back\ inscription.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20%; /* ajoute la marge */
+        color: #fff; 
+        box-shadow:
+        inset 0 10px 10px #BE04FF, 
+        inset 10px 0 10px #BE04FF ,
+        inset 0 -10px 10px #BE04FF;
+    
     }
+
+    .inscription-container{
+    
+   
+    background-image: url("picture/abstract-geometric-background-shapes-texture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8%;
+    color: #fff;
+    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
+    border-right: 10px solid #BE04FF;
+    border-bottom: 10px solid #BE04FF;
+    display: flex;
+    flex-direction: column;
+
+    }
+    .inscription-container h1{
+        color: #fff;
+        font-size: 28px;
+        /* padding-top: 20px; */
+        width: 90%;
+        /* border: 1px solid red; */
+        text-align: center;
+        text-shadow: -1px -1px 0 #BE04FF, 1px 0px 0 #BE04FF, 1px 1px 0 #BE04FF, 1px 2px 0 #BE04FF;
+}
+.inscription-container p{
+    font-size: 14px;
+    font-family: Inter;
+    color: #fff;
+    padding-top: 40px;
+    width: 90%;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: bolder;
+}
+.inscription-input{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    padding-top: 4rem;
+
+}
+.inscription-input input{
+    width: 70%;
+    height: 3vh;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.inscription-input button{
+    width: 80%;
+    height: 4vh;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #BE04FF;
+
+    color: #202020;
+    font-weight: bold;
+}
    }
