@@ -9,35 +9,34 @@
 /* ph-actualite */
 .ph-actualite-background {
     background-image: url("picture/zzz.png");
-    
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    width: 100%;
-    height: 100vh;
     background-position: center;
-    /* padding: 370px;  */
-    border-top: 10px solid  #FF5C00; 
-    border-bottom: 10px solid #FF5C00; 
-    border-left: 10px solid #FF5C00; 
-    box-shadow: inset 3px 10px 5px #FF5C00, inset 3px -5px 20px 1px #FF5C00, inset 0 1px 20px #FF5C00;
+    padding: 25%;
+    box-shadow:
+    inset 0 10px 10px #FF5C00, 
+    inset 10px 0 10px #FF5C00 ,
+    inset 0 -10px 10px #FF5C00;
 }
 /* end ph-actualite*/
 
 .actualite-container{
     background-color: #000;
     color: #fff;
-    box-shadow: inset 3px 10px 5px #FF5C00, inset 3px -5px 20px 1px #FF5C00, inset 0 1px 20px #FF5C00;
-    border-right: 10px solid #FF5C00; /* Border only on the right side */
-    border-bottom: 10px solid #FF5C00; /* Border only on the bottom */
+    box-shadow:   inset 0 10px 10px #FF5C00, 
+    inset -10px 0 10px #FF5C00 ,
+    inset 10px 0 0px transparent ,
+    inset 0 -10px 10px #FF5C00;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .actualite-container h1{
     color: #fff;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 60px;
+    text-shadow: -1px -1px 0 #FF5C00, 1px -1px 0 #FF5C00, -1px 1px 0 #FF5C00, 1px 1px 0 #FF5C00;
   }
 .news{
     display: flex;
@@ -52,32 +51,51 @@
     background-color: #171616;
     height: 400px;
     width: 35%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    border-radius: 5px;
 }
 .new-thumb{
 
     width:80%;
     
+    
 }
 .new-thumb img{
     width: 100%;
     height: 100%;
-    
-}
-.new h5{
-    font-family:Inter ;
+    border-radius: 5px;
 }
 .new-descirption{
-    
-    width:80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.new-descirption h5{
+    font-family:Inter ;
+    font-size: small;
+    color: #746F6B;
+}
+.new-descirption p{
+    font-weight: bold;
 }
 .pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px auto 90px;
+}
+.pagination button{
+    background-color: #FF5C00;
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
     
-
 }
 /*end Actualite */
 
@@ -89,17 +107,21 @@
    .new{
     width: 95%;
     background-color: #000;
+    border: 1px solid white;
+    border-radius: 20px;
    }
-   .ph-actualite-background{
-    background-image: url("picture/creative-cartoon-gamer-room_23-2148936605\ 1.png");
-    
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+   .ph-actualite-background {
+    background-image: url("picture/zzz.png");
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    width: 100%;
-    height: 100vh;
+    /* width: 100%;
+    height: 100vh; */
     background-position: center;
-   }
+    padding: 20%;
+    box-shadow:
+    inset 0 10px 10px #FF5C00, 
+    inset 10px 0 10px #FF5C00 ,
+    inset 0 -10px 10px #FF5C00;
+}
   }
