@@ -9,30 +9,37 @@
     background-image: url("picture/REM.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 375px; /* Ajoute de la marge interne pour afficher le contenu correctement */
-    text-align: center; 
+    padding: 25%; /* ajoute la marge */
     color: #fff; 
-    border-top: 10px solid  #FFE604; 
-    border-bottom: 10px solid #FFE604;
-    border-left: 10px solid #FFE604;
+    box-shadow:
+    inset 0 10px 10px #FFE604, 
+    inset 10px 0 10px #FFE604 ,
+    inset 0 -10px 10px #FFE604;
     
-    /* Effet néon sur la bordure */
-    box-shadow: inset 3px 10px 5px #FFE604, inset 3px -5px 20px 1px #FFE604, inset 0 1px 20px #FFE604;
+    
 
 }
 
 .jeux-container{
     background-color: #000;
     color: #fff;
-    box-shadow: inset 3px 10px 5px #FFE604, inset 3px -5px 20px 1px #FFE604, inset 0 1px 20px #FFE604;
-    border-right: 10px solid #FFE604; /* Border only on the right side */
-    border-bottom: 10px solid #FFE604; /* Border only on the bottom */
+    width: 100%;
+    box-shadow:   inset 0 10px 10px #FFE604, 
+    inset -10px 0 10px #FFE604 ,
+    inset 10px 0 0px transparent ,
+    inset 0 -10px 10px #FFE604;
 }
 .jeux-container h1{
     color: #fff;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 90%;
+    gap: 30px;
+    /* border: 1px solid red; */
+    text-align: center;
+    text-shadow: -1px -1px 0 #FFE604, 1px -1px 0 #FFE604, -1px 1px 0 #FFE604, 1px 1px 0 #FFE604;
 }
 .jeux-container text{
     color: #fff;
@@ -44,26 +51,34 @@
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-    
-    margin: 20px auto;
+    /* border: 1px solid red; */
+    margin: 80px auto;
     justify-content: center;
     gap: 40px;
 }
 .jeu{
     background-color: #171616;
-    width: 40%;
+    width: 45%;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    border-radius: 5px;
 }
 .jeu-description{
     display: flex;
     flex-direction: column;
     gap: 17px;
+    padding: 7px 15px;
+}
+.jeu-thumb img{
+
+    border-radius: 5px;
 }
 .jeu-description p{
     font-family:Inter ;
+    font-size: 15px;
 }
 .jeu-description a{
     /* border: 1px solid rgb(255, 255, 255); */
@@ -71,5 +86,49 @@
     color: #FFE604;
     font-size: 15px;
 }
-
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    /* margin: 5px auto 0px; */
+    padding-bottom: 40px;
+}
+.pagination button{
+    background-color: #FFE604;
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+    
+}
 /*end jeux */
+
+@media  (max-width: 1100px) {
+    .jeu{
+     width: 90%;
+     background-color: #000;
+    display: flex;
+    
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    }
+    .jeu-thumb{
+        padding-top: 10px;
+    }
+    .ph-jeux-background{
+        background-image: url("picture/REM.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20%; /* ajoute la marge */
+        text-align: center; 
+        color: #fff; 
+        box-shadow:
+        inset 0 10px 10px #FFE604, 
+        inset 10px 0 10px #FFE604 ,
+        inset 0 -10px 10px #FFE604;
+        
+        
+    
+    }
+}
