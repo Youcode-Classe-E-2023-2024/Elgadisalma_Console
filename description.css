@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Jacques+Francois+Shadow&family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* start description */
+.description-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-top: 2px solid #746F6B ;
+    border-bottom: 2px solid #746F6B ;
+    color: #fff;
+    align-items: center;
+    height: fit-content;
+
+}
+.description-container h1{
+    font-size: 30px;
+    padding-top: 30px;
+    font-family: 'Jacques Francois Shadow', serif;
+    color: #FF5C00;
+}
+
+.description-container img{
+    float: right;
+}
+
+.name-desc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.name-desc img{
+    height: 30rem;
+    width: 42rem;
+    border-radius: 15px;
+}
+.paragraphe{
+    background-color: black;
+    border-radius: 15px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Joti One', serif;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+.paragraphe h4{
+    color: #FF5C00;
+    font-size: 23px;
+    /* text-align: center; */
+}
+
+.paragraphe h5{
+    font-family: Inter;
+    color: #746F6B;
+    font-size: 15px;
+}
+
+.paragraphe p{
+    font-size: 21px;
+    font-weight: bolder;
+    display: flex;
+    
+    padding: 10px;
+    
+    
+}
+.paaragraphe{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    height: 15rem;
+}
+.paaragraphe p{
+    font-size: 20px;
+    font-family: 'Joti One', serif;
+font-family: 'Joti One', serif;
+}
+.paaragraphe h5{
+    font-family: Inter;
+    color: #b3aba6;
+}
+
+
+/* end description */
+
+@media  (max-width: 800px) {
+    .name-desc img{
+        height: 15rem;
+        width: 22rem;
+        border-radius: 15px;
+    }
+    .paragraphe{
+        background-color: black;
+        border-radius: 15px;
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Joti One', serif;
+        justify-content: flex-end;
+        gap: 10px;
+    
+    }
+    .description-container{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        border-top: 2px solid #746F6B ;
+        border-bottom: 2px solid #746F6B ;
+        color: #fff;
+        align-items: center;
+        height: 220vh;
+    
+    }
+
+}
