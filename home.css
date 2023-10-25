@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Jacques+Francois+Shadow&family=Joti+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 * {
 	margin: 0;
@@ -14,10 +16,9 @@
   padding: 20%; /* ajoute la marge */
   text-align: center;
   color: #fff;
-  box-shadow:
-    inset 0 10px 10px #630A0A, 
-    inset 10px 0 10px #630A0A ,
-    inset 0 -10px 10px #630A0A;
+  border-top: 13px solid #630A0A;
+  border-left: 13px solid #630A0A; 
+  border-bottom: 13px solid #630A0A;
 }
 
 
@@ -25,6 +26,7 @@
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
     color: #E56272;
+    padding-top: 10px;
     font-size: 40px;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
@@ -44,17 +46,14 @@
 
 /* start login */
 .login-container{
-    background-color: #000;
-    height:100vh;
-    width: auto;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow:   inset 0 10px 10px #630A0A, 
-    inset -10px 0 10px #630A0A ,
-    inset 10px 0 0px transparent ,
-    inset 0 -10px 10px #630A0A;
+  background-color: #000;
+  height:130vh;
+  width: auto;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 13px solid #630A0A; 
+  border-bottom: 13px solid #630A0A;
    
     
 }
@@ -69,13 +68,12 @@
   display: flex;
   justify-content: center;
   height: auto;
-
-  /* border: 1px solid green; */
 }
 .img-thumb img{
   
     height: 30rem;
     width: 30rem;
+    
 }
 .txt-login{
     color: white;
@@ -84,16 +82,21 @@
     flex-direction: column;
     padding: 80px;
     gap: 25px;
-    border: 1px solid #3f3f3f;
     border-radius: 20px;
-  box-shadow: inset 3px 10px 5px #3f3f3f, inset 3px -5px 20px 1px #3f3f3f, inset 0 1px 20px #3f3f3f;
-    border-right: 10px solid #3f3f3f; /* Border only on the right side */
-    border-bottom: 10px solid #3f3f3f; /* Border only on the bottom */
+    border: 2px solid white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+    transition: background-color 0.9s ease;
 }
+.txt-login:hover {
+  background-color: #000;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 0.8s ease;
+}
+
 .txt-login h4{
   font-size: 20px;
-  font-family: Inter;
-  font-style: italic;
+  font-family: 'Jacques Francois Shadow', serif;
 }
 .txt-login input{
     /* width: 70%;  */
@@ -142,6 +145,18 @@
   .login{
     width: 95%;
   }
+  .login-container{
+    background-color: #000;
+    height:90vh;
+    width: auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 13px solid #630A0A; 
+    border-bottom: 13px solid #630A0A;
+     
+      
+  }
   .txt-login{
     color: white;
     font-weight: 90;
@@ -149,11 +164,10 @@
     flex-direction: column;
     padding: 60px;
     gap: 25px;
-    border: 1px solid #3f3f3f;
     border-radius: 20px;
-    box-shadow: inset 3px 10px 5px #3f3f3f, inset 3px -5px 20px 1px #3f3f3f, inset 0 1px 20px #3f3f3f;
-    border-right: 10px solid #3f3f3f;
-     border-bottom: 10px solid #3f3f3f;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
   }
   
   .img-thumb img{
