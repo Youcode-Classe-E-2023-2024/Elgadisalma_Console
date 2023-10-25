@@ -85,9 +85,14 @@
     padding: 5px 15px;
     border-radius: 15px;
     background-color: #BE04FF;
-
+    transition: background-color 0.3s ease;
     color: #202020;
     font-weight: bold;
+}
+.inscription-input button:hover {
+    background-color: #c754e1;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
