@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Description</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="description.css">
+         <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div id="logo">
+            <a href="home.html"><img src="picture/Logo.png" alt="Console+"></a>
+        </div>
+        <div id="menu-toggle" onclick="toggleSideBar()">&#9776;</div>
+        <div class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="actualite.html">Actualités</a></li>
+                <li><a href="jeux.html">Jeux Populaires</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </div>
+    </div>
+
+      
+<!-- end navbar -->
+
+<!-- start description -->
+<div class="description-container">
+    <h1>--- News jeux ---</h1>
+    <div class="name-desc">
+        <img src="picture/new1.png" alt="">
+        <div class="paragraphe">
+        <h4>Le marché des skins de Counter-Strike nous offre parfois des histoires folles.</h4>
+        <h5>Publié le 18/10/2023 à 07:02</h5>
+        <p>1,2 millions d'euros pour un skin de couteau, et il a refusé l'offre ? Les prix dans Counter-Strike sont complètement absurdes Même si vous y étiez très attaché, quel serait votre prix, pour un skin Counter-Strike particulièrement rare ? Certains sont capables de refuser une somme à sept chiffres ...1,2 millions d'euros étaient insuffisants."
+            Ohnepixel est un célèbre créateur de contenu sur Counter-Strike. En particulier, c'est un expert au sujet des skins du jeu de Valve et du marché qui y est attaché.</p>
+
+        </div>
+
+    </div>
+    <div class="paaragraphe">
+        
+<p>" Il est tellement populaire pour son expertise, que certains joueurs souhaitant acheter ou vendre des skins louent ses services comme intermédiaire. Il raconte sur sa chaîne YouTube une histoire datant de deux ans, dans laquelle il a justement joué l'intermédiaire entre un joueur anonyme et le potentiel acheteur ... du skin le plus rare au monde ! On lui a proposé plus 1,2 millions d'euros en Bitcoin, pour un couteau Karambit en acier trempé en état "Factory New" avec le motif 387, autrement dit le skin jugé le plus rare du jeu. Mais le propriétaire du skin a refusé l'offre, affirmant que "1,2 millions d'euros étaient insuffisants."</p>
+    
+</div>
+    
+</div>
+
+
+<!-- end description -->
+
+
+
+<!-- footer -->
+<div class="footer-container-description">
+    <div class="suivie">
+        <h4>Console+ &copy; 2023</h4>
+        <div class="icons-suivie">
+        <a href="https://www.facebook.com/"><img src="picture/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="picture/instagram.png" alt=""></a>
+        <a href="https://www.twitter.com/"><img src="picture/twitter.png" alt=""></a>
+        <a href="https://www.youtube.com/"><img src="picture/youtube.png" alt=""></a>
+        
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!-- end footer -->
+<script>
+function toggleSideBar()
+{
+    console.log('clicked');
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else
+    {
+        sidebar.style.width = "250px";
+    }
+}
+</script>
+
+</body>
+
+</html>
