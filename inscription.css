@@ -8,9 +8,7 @@
     background-image: url("picture/back\ inscription.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    
     padding: 25%;/* ajoute la marge */
-    /* text-align: center;  */
     color: #fff; 
     box-shadow:
     inset 0 10px 10px #BE04FF, 
@@ -119,9 +117,10 @@
     background-repeat: no-repeat;
     padding: 8%;
     color: #fff;
-    box-shadow: inset 3px 10px 5px #BE04FF, inset 3px -5px 20px 1px #BE04FF, inset 0 1px 20px #BE04FF;
-    border-right: 10px solid #BE04FF;
-    border-bottom: 10px solid #BE04FF;
+    box-shadow:   inset 0 10px 10px #BE04FF, 
+    inset -10px 0 10px #BE04FF ,
+    inset 10px 0 0px transparent ,
+    inset 0 -10px 10px #BE04FF;
     display: flex;
     flex-direction: column;
 
