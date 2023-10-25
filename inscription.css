@@ -10,10 +10,9 @@
     background-repeat: no-repeat;
     padding: 25%;/* ajoute la marge */
     color: #fff; 
-    box-shadow:
-    inset 0 10px 10px #BE04FF, 
-    inset 10px 0 10px #BE04FF ,
-    inset 0 -10px 10px #BE04FF;
+    border-top: 13px solid #BE04FF;
+    border-left: 13px solid #BE04FF; 
+    border-bottom: 13px solid #BE04FF;
 
 }
 .inscription-container{
@@ -22,10 +21,8 @@
     background-repeat: no-repeat;
     padding: 290px;
     color: #fff;
-    box-shadow:   inset 0 10px 10px #BE04FF, 
-    inset -10px 0 10px #BE04FF ,
-    inset 10px 0 0px transparent ,
-    inset 0 -10px 10px #BE04FF;
+    border-right: 13px solid #BE04FF; 
+    border-bottom: 13px solid #BE04FF;
     display: flex;
     flex-direction: column;
     
@@ -43,7 +40,7 @@
 .inscription-container p{
     font-size: 23px;
     font-family: Inter;
-    color: #fff;
+    color: #938e8b;
     padding-top: 40px;
     width: 90%;
     /* border: 1px solid red; */
@@ -72,7 +69,15 @@
     padding: 5px 15px;
     background-color: #fff;
     border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
+.inscription-input input:hover{
+    background-color: #e8dfd8;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
 .inscription-input input::placeholder{
     color: #202020;
     font-weight: bold;
@@ -80,7 +85,7 @@
 }
 
 .inscription-input button{
-    width: 75%;
+    width: 74%;
     height: 6vh;
     padding: 5px 15px;
     border-radius: 15px;
@@ -107,10 +112,9 @@
         background-repeat: no-repeat;
         padding: 20%; /* ajoute la marge */
         color: #fff; 
-        box-shadow:
-        inset 0 10px 10px #BE04FF, 
-        inset 10px 0 10px #BE04FF ,
-        inset 0 -10px 10px #BE04FF;
+        border-top: 13px solid #BE04FF;
+        border-left: 13px solid #BE04FF; 
+        border-bottom: 13px solid #BE04FF;
     
     }
 
@@ -122,10 +126,8 @@
     background-repeat: no-repeat;
     padding: 8%;
     color: #fff;
-    box-shadow:   inset 0 10px 10px #BE04FF, 
-    inset -10px 0 10px #BE04FF ,
-    inset 10px 0 0px transparent ,
-    inset 0 -10px 10px #BE04FF;
+    border-right: 13px solid #BE04FF; 
+    border-bottom: 13px solid #BE04FF;
     display: flex;
     flex-direction: column;
 
