@@ -181,3 +181,23 @@
 }
 
 /* end footer */
+
+@media  (max-width: 800px) {
+	#logo img {
+		width: 100px; /* Ajuster la taille dyal logo  */
+		padding-left: 30px;
+		
+	}
+	.sidebar {
+		width: 0;
+		height: 100%;
+		position: fixed;
+		top: 80px;
+		right: 0px;
+		bottom: 2px;
+		background-color: #333;
+		overflow-x: hidden;
+		transition: 0.5s;
+		
+	  }
+}
