@@ -125,10 +125,16 @@
   padding: 5px 15px;
   border-radius: 5px;
   background-color: #630A0A;
+  border: none;
   text-decoration: none;
     color: #000;
+    transition: background-color 0.3s ease;
 }
-
+.btn-login :hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 /* end login */
 /* end home */
 
