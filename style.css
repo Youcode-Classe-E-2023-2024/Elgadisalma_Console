@@ -112,12 +112,9 @@
   justify-content: center;
   background-color: #000000;
   height: 25vh;
-  /* border-top: 10px solid #630A0A; */
-  color: white;
-  box-shadow:
-    inset 0 10px 10px #630A0A, /* Bordure en haut */
-    inset 10px 0 10px #630A0A ,
-    inset 0 -10px 10px #630A0A;
+  color: #b3aba6;
+  border-left: 13px solid #630A0A; 
+  border-bottom: 13px solid #630A0A;
   
 }
 .footer-container-actualite{
@@ -126,12 +123,9 @@
   justify-content: center;
   background-color: #000000;
   height: 25vh;
-  /* border-top: 10px solid #630A0A; */
-  color: white;
-  box-shadow:
-    inset 0 10px 10px #FF5C00, /* Bordure en haut */
-    inset 10px 0 10px #FF5C00 ,
-    inset 0 -10px 10px #FF5C00;
+  color: #b3aba6;
+  border-left: 13px solid #FF5C00; 
+  border-bottom: 13px solid #FF5C00;
 }
 .footer-container-jeux{
   display: flex;
@@ -139,12 +133,9 @@
   justify-content: center;
   background-color: #000000;
   height: 25vh;
-  /* border-top: 10px solid #630A0A; */
-  color: white;
-  box-shadow:
-    inset 0 10px 10px #FFE604, /* Bordure en haut */
-    inset 10px 0 10px #FFE604 ,
-    inset 0 -10px 10px #FFE604;
+  color: #b3aba6;
+  border-left: 13px solid #FFE604; 
+  border-bottom: 13px solid #FFE604;
 }
 .footer-container-inscription{
   display: flex;
@@ -152,12 +143,17 @@
   justify-content: center;
   background-color: #000000;
   height: 25vh;
-  /* border-top: 10px solid #630A0A; */
-  color: white;
-  box-shadow:
-    inset 0 10px 10px #BE04FF, /* Bordure en haut */
-    inset 10px 0 10px #BE04FF ,
-    inset 0 -10px 10px #BE04FF;
+  color: #b3aba6;
+  border-left: 13px solid #BE04FF; 
+  border-bottom: 13px solid #BE04FF;
+}
+.footer-container-description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  height: 25vh;
+  color: #b3aba6;
 }
 .suivie{
 	font-family: Inter;
